@@ -20,7 +20,7 @@ alt.themes.register("project", base_theme)
 alt.themes.enable("project")
 
 st.title("A Data Story: The Premier League")
-st.markdown("**Central question:** *Do offensive aggression and discpline seperate elite clubs such as Liverpool and Man City from bottom-tier clubs such as Brentford and the Wolves?*")
+st.markdown("**Central question:** *Which factors besides player talent explain the performance gap between elite clubs such as Liverpool and Man City from bottom-tier clubs such as Brentford and the Wolves?*")
 
 st.header("Figure 1: Points Table Over the Past Two Seasons")
 st.write("Before identifying what seperates elite clubs from the rest, we must first establish the peformance gap.")
@@ -28,12 +28,16 @@ st.altair_chart(dot_chart(first_season, season_season), use_container_width=True
 st.caption("As you can see teams at the top consistently performed well in each of the last two seasons, while there are some teams who performed at the bottom of the table consistently." \
 " For this analysis below, I will focus on four teams, including two who were consistently at the top of the table over the past two seasons, and two teams who were consistenly near the bottom over the past "
 " two seasons. A quick sidenote is that I will not be analyzing teams who only have one season of data due to the promotion/relegation nature of the Premier League. The two teams consistently at the top are Liverpool " \
-" and Man City, while the two teams consistently at the bottom (who were in the Premier League for both seasons) are the Wolves and Brentford." )
+" and Man City, while the two teams consistently at the bottom (who were in the Premier League for both seasons) are the Wolves and Brentford. These 4 teams will be examined in depth in a case study like " \
+" narrative." )
+
+
 
 st.header("Three potential factors will be analyzed:")
-st.markdown("1. Do Elite Clubs Take Advantage of their Home Field?")
-st.markdown("2. Does Discipline Explain the Seperation between Elite Clubs and Bottom-Tier Clubs?")
-st.markdown("3. Does Offensive Aggression explain the Seperaton between Elite Clubs and Bottom-Tier Clubs?")
+st.markdown("For this case-study type analysis, I wanted to focus on attributes other than player talent in order to analyze non-obvious attributes that might create the seperation gap between elite clubs and bottom-tier clubs.")
+st.markdown("1. Do elite clubs take advantage of their home field?")
+st.markdown("2. Does discipline explain the seperation between elite clubs and bottom-tier clubs?")
+st.markdown("3. Does offensive aggression explain the seperaton between elite clubs and bottom-tier clubs?")
 
 
 st.header("Figure 2: Do Elite Clubs take Advantage of Home Field?")

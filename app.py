@@ -1,10 +1,13 @@
 import streamlit as st
+from PIL import Image
 from utils.data_loader import load_first_season, load_second_season
 
 
 st.set_page_config(page_title="HW4: Data Visualization - Vishal Potineni", layout="wide")
+st.title("What seperates Elite Clubs from Bottom-Tier Clubs in the Premier League besides the most salient attribute: Talent?")
+st.write(Image.open('images/Premier_League_Logo.jpg'))
 
-st.title("What Specific Factors Seperates Elite Clubs such as Liverpool and Manchester City from Bottom-Tier Clubs such as Brenton and the Wolves?")
+
 
 st.write(
     "To explore this visual data story, please navigate it through the pages in the sidebar:\n"
